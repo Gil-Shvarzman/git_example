@@ -1,0 +1,30 @@
+# Ignore all files with a specific extension
+*.log
+*.tmp
+*.bak
+
+# Ignore a specific file by name
+config.local.js
+.DS_Store
+
+# Ignore a directory and all its contents
+build/
+node_modules/
+temp/
+
+# Ignore all files with a specific name in any directory
+# This will ignore all 'secrets.txt' files regardless of where they are located
+secrets.txt
+
+# Ignore a file within a specific directory
+# This will ignore 'test.log' only if it's directly inside the 'logs' directory
+/logs/test.log
+
+# Ignore all files in a specific directory and its subdirectories
+# This will ignore everything inside 'logs/' and any subfolders within 'logs/'
+logs/**
+
+# Negate a previously ignored pattern (re-include a specific file)
+# This ignores all .txt files except for 'important.txt'
+*.txt
+!important.txt
